@@ -202,7 +202,10 @@
     left: 140px;
     top: 125px;
 }
-
+#uiBase.onGame #chatHolder {
+    left: 20px;
+    bottom: 150px;
+}
 #inviteButton {
     left: 140px;
     top: 115px;
@@ -320,10 +323,6 @@
 #policeButton img {
     height: 80px !important;
     margin-top: 20px !important;
-}
-#uiBase.onMenu #chatHolder {
-    left: 145px;
-    bottom: 10px;
 }
 #leaderDisplay {
     text-align: left;
