@@ -56,10 +56,6 @@
     will-change: transform;
     display: inline-block;
 }
-#uiBase.onGame #chatHolder {
-    left: 20px;
-    bottom: 110px;
-}
 #chatInputHolder, #chatList {
     border-radius: 8px;
 }
@@ -377,7 +373,6 @@
 }
 
 #uiBase.onMenu #specTimer {
-    display: block!important;
     font-size: 35px;
     background-color: rgba(0, 0, 0, 0.4) !important;
     border: 3px solid rgba(0, 0, 0, 0.4);
