@@ -1,0 +1,386 @@
+@import url(https://envyxyz.github.io/removal/removal.css);
+@font-face {
+    font-family: gamefont;
+    src: url(https://fonts.gstatic.com/s/montserrat/v24/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aXo.woff2) format('woff2');
+}
+#hudClassIcon {
+	display: none !important;
+}
+#healthBar {
+    position: absolute;
+    display: inline-flex;
+    width: 316px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.40);
+    border: 12px solid rgba(0, 0, 0, .01);
+    border-radius: 8px;
+    bottom: 0px;
+}
+
+.healthBarSeg {
+    margin: 0px -1px;
+    border-radius: 0;
+    background-color: transparent;
+    width: -webkit-fill-available;
+}
+
+.hpBSeg {
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%;
+}
+#challIcon {
+    width: 28px;
+    height: 28px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    display: none !important;
+}
+#healthValueHolder {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 9px;
+    position: absolute;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 110px;
+    top: -18px;
+    z-index: 99999 !important;
+    border-radius: 5px;
+    padding: 3px 3px 3px 9px;
+}
+#healthValue {
+    color: #fff;
+    font-size: 25px;
+    will-change: transform;
+    display: inline-block;
+}
+#uiBase.onGame #chatHolder {
+    left: 20px;
+    bottom: 110px;
+}
+#chatInputHolder, #chatList {
+    border-radius: 8px;
+}
+#ammoIcon {
+    display: none !important;
+}
+#ammoDisplay {
+    margin-right: -15px;
+    display: inline-block;
+    padding: 7px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px !important;
+    font-size: 35px;
+    letter-spacing: -2px;
+    border-radius: 8px;
+    height: 65px;
+    border: 2px solid rgba(0, 0, 0, .4);
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.25),rgba(255, 255, 255, 0.25));
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    margin-bottom: -12px !important;
+}
+#curGameInfo {
+    z-index: 3;
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: none !important;
+}
+#timerIcon {
+    width: 45px;
+    height: 45px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    display: none !important;
+}
+#timerDisplay {
+    text-align: left;
+    z-index: 3;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    will-change: transform;
+    transform: translateZ(0);
+    border-radius: 8px;
+    vertical-align: top;
+    border: 2px solid rgba(0, 0, 0, .4);
+}
+#fpsDisplay #ingameFPS {
+    color: #fff !important;
+}
+#pingDisplay .material-icons {
+    vertical-align: bottom;
+    font-size: 30px;
+    display: none !important;
+}
+#pingDisplay::after {
+    content: ' MS';
+    font-size: 18px;
+}
+#pingText {
+    color: #fff !important;
+}
+.menuItem .menuItemTitle {
+    margin-top: -20%;
+    color: #fff;
+    display: none !important;
+}
+#signedOutHeaderBar {
+    padding-left: 6px;
+    padding-right: 6px;
+    position: absolute;
+    left: 130px;
+}
+#menuItemContainer {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.5);
+}
+#mainLogo {
+    margin-top: 50px;
+    margin-bottom: -40px;
+    height: 225px;
+    display: none !important;
+}
+.button.small {
+    height: 80px;
+    width: 80px;
+    line-height: 45px;
+    padding-top: 5px!important;
+    padding-bottom: 13px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    font-size: 0px!important;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 8px;
+    border: 3px solid rgba(0, 0, 0, .5) !important;
+}
+#subLogoButtons>div:not(:first-child)::after {
+    font-size: 60px;
+    transition-duration: 350ms;
+    font-family: 'Material Icons';
+    position: inherit;
+    top: 25%;
+}
+#menuBtnJoin::after {
+    content: 'group_add';
+}
+#menuBtnBrowser::after {
+    content: 'search';
+}
+
+#menuBtnRanked>#faceItIconM {
+    display: inline-block!important;
+    height: 60px;
+    width: 60px;
+    transform: translate(-5px, 10px);
+    filter: brightness(0) invert(1)
+}
+
+#inviteButton::after {
+    content: 'insert_link';
+}
+
+#menuBtnHost::after {
+    content: 'dns';
+}
+#menuBtnJoin {
+    left: 140px;
+    top: 125px;
+}
+
+#inviteButton {
+    left: 140px;
+    top: 115px;
+}
+
+#menuBtnRanked {
+    left: 140px;
+    top: 105px
+}
+
+#menuBtnBrowser {
+    left: 140px;
+    top: 95px
+}
+
+#menuBtnHost {
+    left: 140px;
+    top: 85px
+}
+#subLogoButtons {
+    position: absolute;
+    width: 100px;
+    height: 1000px;
+    top: 0px;
+    left: 0px;
+    transform: translate(0px, 0px);
+}
+#signedInHeaderBar {
+    padding-right: 0!important;
+    border-bottom-right-radius: 10px!important;
+    position: absolute;
+    left: 130px;
+}
+#termsInfo {
+    background-color: rgba(0,0,0,.5);
+    padding: 5px 15px 15px 20px;
+    border-top-left-radius: 6px;
+    margin-right: -15px;
+    display: none !important;
+}
+#menuFPSDisplay #menuFPS {
+    color: #fff !important;
+}
+#menuPingText {
+    font-size: 12px;
+    color: rgb(255 255 255);
+}
+#menuPingDisplay .material-icons {
+    vertical-align: bottom;
+    font-size: 20px;
+    display: none !important;
+}
+#menuPingDisplay::after {
+    content: ' MS';
+    font-size: 12px;
+}
+#policeButton, #customizeButton {
+    border: 3px solid rgba(0, 0, 0, .5) !important;
+}
+#customizeButton {
+    display: inline-block;
+    width: 108px;
+    height: 108px;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0px !important;
+    pointer-events: all;
+    padding-bottom: 13px;
+    border-radius: 8px;
+    left: 178px;
+    top: 858px;
+}
+#menuClassContainer {
+    position: absolute;
+    right: 100%;
+    top: 0px;
+    bottom: 100%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transform: scale(.8);
+    z-index: 99999;
+}
+#customizeButton .material-icons {
+    font-size: 80px !important;
+    color: #fff !important;
+    margin-left: 0 !important;
+    margin-top: 15px !important;
+    margin-right: 0 !important;
+    vertical-align: middle !important;
+}
+.bigShadowT {
+    text-shadow: 0 0 BLACK !important;
+}
+#policeButton {
+    margin-right: 0;
+    margin-left: 0;
+    color: #fff;
+    height: 125px !important;
+    width: 125px !important;
+    border-radius: 8px;
+    left: 244px;
+    top: 1080px;
+}
+#menuClassNameTag, #menuClassSubtext, #menuClassName, #classPreviewCanvas {
+    display: none !important;
+}
+#policeButton img {
+    height: 80px !important;
+    margin-top: 20px !important;
+}
+#uiBase.onMenu #chatHolder {
+    left: 145px;
+    bottom: 10px;
+}
+#leaderDisplay {
+    text-align: left;
+    float: right;
+    width: 310px;
+    z-index: 3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgba(255,255,255,.7);
+    font-size: 23px;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0, 0, 0, .4);
+}
+.leaderItem {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 5px !important;
+}
+.weapKey {
+    display: flex !important;
+}
+#uiBase.onMenu #spectateUI {
+    display: block!important;
+    position: fixed;
+    bottom: 48.5%;
+    top: unset;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+}
+
+#uiBase.onMenu #spectateHUD {
+    display: flex;
+    justify-content: center;
+    transform: unset;
+    left: unset;
+}
+
+#uiBase.onMenu #specTeam0, #uiBase.onMenu #spec0, #uiBase.onMenu #spec1, #uiBase.onMenu #specNames, #uiBase.onMenu #specStats, #uiBase.onMenu #specContr, #uiBase.onMenu #specKPDContr, #uiBase.onMenu #specSus, #uiBase.onMenu #specTeam1, #uiBase.onMenu #specGMessage, #uiBase.onMenu #specGameInfo {
+    display: none!important
+}
+
+#uiBase.onMenu #specTimer {
+    display: block!important;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px !important;
+    color: rgba(255,255,255,.55)
+}
